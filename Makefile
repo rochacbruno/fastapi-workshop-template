@@ -74,18 +74,6 @@ virtualenv:       ## Create a virtual environment.
 	@echo
 	@echo "!!! Please run 'source .venv/bin/activate' to enable the environment !!!"
 
-.PHONY: release
-release:          ## Create a new tag for release.
-	@echo "WARNING: This operation will create s version tag and push to github"
-	@read -p "Version? (provide the next x.y.z semver) : " TAG
-	@echo "creating git tag : $${TAG}"
-	@git tag $${TAG}
-	@echo "$${TAG}" > project_name/VERSION
-	@$(ENV_PREFIX)gitchangelog > HISTORY.md
-	@git add project_name/VERSION HISTORY.md
-	@git commit -m "release: version $${TAG} 🚀"
-	@git push -u origin HEAD --tags
-	@echo "Github Actions will detect the new tag and release the new version."
 
 .PHONY: docs
 docs:             ## Build the documentation.
@@ -110,10 +98,6 @@ switch-to-poetry: ## Switch to poetry package manager.
 	@mv setup.py .github/backup
 	@echo "You have switched to https://python-poetry.org/ package manager."
 	@echo "Please run 'poetry shell' or 'poetry run project_name'"
-
-.PHONY: init
-init:             ## Initialize the project based on an application template.
-	@./.github/init.sh
 
 
 # This project has been generated from rochacbruno/python-project-template

@@ -9,3 +9,7 @@ codecov
 mypy
 gitchangelog
 mkdocs
+
+# dev tools
+ipython
+ipdb
