@@ -7,17 +7,16 @@ project_description
 
 ## Install
 
-from source
+
+### Running on gitpod
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/author_name/project_urlname)
+
+### from source
 ```bash
 git clone https://github.com/author_name/project_urlname project_name
 cd project_name
 make install
-```
-
-from pypi
-
-```bash
-pip install project_name
 ```
 
 ## Executing
