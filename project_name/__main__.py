@@ -1,7 +1,7 @@
+from .cli import cli
 
-def main() -> None:  # pragma: no cover
-    print("Hello, world!")
+main = cli
 
 
-if __name__ == "__main__":  # pragma: no cover
+if __name__ == "__main__":
     main()

@@ -25,3 +25,4 @@ ports:
 vscode:
   extensions:
     - "redhat.vscode-yaml"
+    - "tamasfe.even-better-toml"
