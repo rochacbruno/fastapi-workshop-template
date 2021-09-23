@@ -1,10 +1,31 @@
 {
-    "extensions.showBuiltin": true,
-    "redhat.telemetry.enabled": true,
-    "workbench.colorTheme": "Gruvbox Dark Hard",
-    "editor.fontSize": 18,
-    "git.autofetch": true,
-    "python.insidersChannel": "off",
-    "update.mode": "manual",
-    "extensions.autoUpdate": false
- }
+  "extensions.showBuiltin": true,
+  "redhat.telemetry.enabled": true,
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "editor.fontSize": 18,
+  "git.autofetch": true,
+  "python.insidersChannel": "off",
+  "update.mode": "manual",
+  "extensions.autoUpdate": false,
+  "files.exclude": {
+    "**/*.egg-info": true,
+    ".gitpod.yml": true,
+    "ABOUT_THIS_TEMPLATE.md": true,
+    ".coveragerc": true,
+    "HISTORY.md": true,
+    "LICENSE": true,
+    "MANIFEST.in": true,
+    "mkdocs.yml": true,
+    "docs/": true,
+    ".github/": true,
+    ".vscode/": true,
+    "CONTRIBUTING.md": true,
+    "**/__pycache__": true,
+    ".gitignore": true,
+    "Containerfile": true,
+    "Makefile": true,
+    "htmlcov": true,
+    ".mypy_cache": true,
+    "coverage.xml": true
+  }
+}
