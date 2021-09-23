@@ -26,6 +26,7 @@
     "Makefile": true,
     "htmlcov": true,
     ".mypy_cache": true,
-    "coverage.xml": true
+    "coverage.xml": true,
+    ".pytest_cache": true
   }
 }
