@@ -7,6 +7,7 @@
   "python.insidersChannel": "off",
   "update.mode": "manual",
   "extensions.autoUpdate": false,
+  "files.autoSave": "onFocusChange",
   "files.exclude": {
     "**/*.egg-info": true,
     ".gitpod.yml": true,
