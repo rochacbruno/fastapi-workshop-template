@@ -35,7 +35,7 @@ def shell():  # pragma: no cover
     try:
         from IPython import start_ipython
 
-        start_ipython(argv=[], user_ns=_vars)
+        start_ipython(argv=["--simple-prompt"], user_ns=_vars)
     except ImportError:
         import code
 
